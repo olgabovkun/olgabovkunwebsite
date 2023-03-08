@@ -30,7 +30,7 @@ const errorMessage = document.getElementById("error-message");
 
 btn.addEventListener("click", () => {
   axios({
-    url: 'http://olgabovkunwebsite-dev.us-west-2.elasticbeanstalk.com/download',
+    url: '/download',
     method: 'GET',
     responseType: 'blob',
   }).then((response) => {
