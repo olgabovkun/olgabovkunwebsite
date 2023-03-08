@@ -28,9 +28,11 @@ const btn = document.querySelector(".download-cv");
 const toastLive = document.getElementById("liveToast");
 const errorMessage = document.getElementById("error-message");
 
+const NODE_ENV = process.env.NODE_ENV;
+
 btn.addEventListener("click", () => {
   axios({
-    url: `${process.env.API_ENDPOINT}/download`,
+    url: NODE_ENV + '/download',
     method: 'GET',
     responseType: 'blob',
   }).then((response) => {

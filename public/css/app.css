@@ -182,7 +182,7 @@ ul.unorder-list li.non-professional-experience::before {
 
 @keyframes hideHeight {
     0% {
-        max-height: 500px;
+        max-height: 1000px;
     }
 
     100% {
@@ -208,12 +208,12 @@ ul.unorder-list li.non-professional-experience::before {
     }
 
     100% {
-        max-height: 500px;
+        max-height: 1000px;
     }
 }
 
 .wrapper-project-info {
-    max-height: 500px;
+    max-height: 1000px;
     min-height: 0;
 }
 
