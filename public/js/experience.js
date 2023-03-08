@@ -28,50 +28,19 @@ const btn = document.querySelector(".download-cv");
 const toastLive = document.getElementById("liveToast");
 const errorMessage = document.getElementById("error-message");
 
-// btn.addEventListener("click", async () => {
-//   await axios({
-//     url: '/download',
-//     method: 'GET',
-//     responseType: 'blob',
-//   }).then((response) => {
-//     const url = window.URL.createObjectURL(new Blob([response.data]));
-//     const link = document.createElement('a');
-//     link.href = url;
-//     link.setAttribute('download', 'Olga_Bovkun_CV.pdf');
-//     document.body.appendChild(link);
-//     link.click();
-//   }).catch(error => {
-//     console.log(error);
-//     const toast = new bootstrap.Toast(toastLive);
-//     errorMessage.textContent = 'Something Went Wrong. Contact me to get CV.';
-//     toast.show();
-//   });
-
-// });
-
-btn.addEventListener("click", async () => {
-  await fetch('/download', {
+btn.addEventListener("click", () => {
+  axios({
+    url: '/download',
     method: 'GET',
-  })
-  .then(resp => {
-    console.log(resp);
-    if(resp.ok) {
-      return resp.blob();
-    }
-    throw new Error('Something went wrong.');
-  })
-  .then(blob => {
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = url;
-    a.download = 'Olga_Bovkun_CV.pdf';
-    document.body.appendChild(a);
-    a.click();
-    window.URL.revokeObjectURL(url);
-    alert('your file has downloaded!'); // or you know, something with better UX...
-  })
-  .catch((error) => {
+    responseType: 'blob',
+  }).then((response) => {
+    const url = window.URL.createObjectURL(new Blob([response.data]));
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'Olga_Bovkun_CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+  }).catch(error => {
     console.log(error);
     const toast = new bootstrap.Toast(toastLive);
     errorMessage.textContent = 'Something Went Wrong. Contact me to get CV.';
@@ -79,6 +48,37 @@ btn.addEventListener("click", async () => {
   });
 
 });
+
+// btn.addEventListener("click", async () => {
+//   await fetch('/download', {
+//     method: 'GET',
+//   })
+//   .then(resp => {
+//     console.log(resp);
+//     if(resp.ok) {
+//       return resp.blob();
+//     }
+//     throw new Error('Something went wrong.');
+//   })
+//   .then(blob => {
+//     const url = window.URL.createObjectURL(blob);
+//     const a = document.createElement('a');
+//     a.style.display = 'none';
+//     a.href = url;
+//     a.download = 'Olga_Bovkun_CV.pdf';
+//     document.body.appendChild(a);
+//     a.click();
+//     window.URL.revokeObjectURL(url);
+//     alert('your file has downloaded!'); // or you know, something with better UX...
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//     const toast = new bootstrap.Toast(toastLive);
+//     errorMessage.textContent = 'Something Went Wrong. Contact me to get CV.';
+//     toast.show();
+//   });
+
+// });
 
 //   .then(function(response) {                      // first then()
 // if(response.ok)
