@@ -49,9 +49,14 @@ const errorMessage = document.getElementById("error-message");
 
 // });
 
-btn.addEventListener("click", () => {
-  fetch('/download')
-  .then(resp => resp.blob())
+btn.addEventListener("click", async () => {
+  await fetch('/download')
+  .then(resp => {
+    if(resp.ok) {
+      return resp.blob();
+    }
+    throw new Error('Something went wrong.');
+  })
   .then(blob => {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -63,7 +68,7 @@ btn.addEventListener("click", () => {
     window.URL.revokeObjectURL(url);
     alert('your file has downloaded!'); // or you know, something with better UX...
   })
-  .catch(() => {
+  .catch((error) => {
     console.log(error);
     const toast = new bootstrap.Toast(toastLive);
     errorMessage.textContent = 'Something Went Wrong. Contact me to get CV.';
@@ -71,3 +76,18 @@ btn.addEventListener("click", () => {
   });
 
 });
+
+//   .then(function(response) {                      // first then()
+// if(response.ok)
+// {
+//   return response.text();         
+// }
+
+// throw new Error('Something went wrong.');
+// })  
+// .then(function(text) {                          // second then()
+// console.log('Request successful', text);  
+// })  
+// .catch(function(error) {                        // catch
+// console.log('Request failed', error);
+// });
