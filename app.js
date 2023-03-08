@@ -24,6 +24,6 @@ app.use((err, req, res, next) => {
     res.status(status).render('error', { err });
 });
 
-app.listen(process.env.APP_PORT, () => {
-    console.log(`Serving on port ${process.env.APP_PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Serving on port ${process.env.PORT}`);
 });
