@@ -52,6 +52,7 @@ const errorMessage = document.getElementById("error-message");
 btn.addEventListener("click", async () => {
   await fetch('/download')
   .then(resp => {
+    console.log(resp);
     if(resp.ok) {
       return resp.blob();
     }
