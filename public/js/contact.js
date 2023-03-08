@@ -31,7 +31,7 @@ form.addEventListener("submit", function (event) {
 
     axios({
         method: 'post',
-        url: '/sendMessage',
+        url: `${process.env.API_ENDPOINT}/sendMessage`,
         headers: { 
             'Content-Type': 'application/x-www-form-urlencoded'
         },

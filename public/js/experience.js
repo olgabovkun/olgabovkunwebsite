@@ -30,7 +30,7 @@ const errorMessage = document.getElementById("error-message");
 
 btn.addEventListener("click", () => {
   axios({
-    url: '/download',
+    url: `${process.env.API_ENDPOINT}/download`,
     method: 'GET',
     responseType: 'blob',
   }).then((response) => {
