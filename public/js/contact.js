@@ -3,7 +3,7 @@ const liveToast = document.getElementById("liveToast");
 const toastMessage = document.getElementById("toastMessage");
 
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", async function (event) {
     event.preventDefault();
     
     if (!form.checkValidity()) {
@@ -29,7 +29,7 @@ form.addEventListener("submit", function (event) {
         }
     }
 
-    axios({
+    await axios({
         method: 'post',
         url: '/sendMessage',
         headers: { 

@@ -28,8 +28,8 @@ const btn = document.querySelector(".download-cv");
 const toastLive = document.getElementById("liveToast");
 const errorMessage = document.getElementById("error-message");
 
-btn.addEventListener("click", () => {
-  axios({
+btn.addEventListener("click", async () => {
+  await axios({
     url: '/download',
     method: 'GET',
     responseType: 'blob',
