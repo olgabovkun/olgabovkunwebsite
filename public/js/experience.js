@@ -50,7 +50,9 @@ const errorMessage = document.getElementById("error-message");
 // });
 
 btn.addEventListener("click", async () => {
-  await fetch('/download')
+  await fetch('/download', {
+    method: 'GET',
+  })
   .then(resp => {
     console.log(resp);
     if(resp.ok) {
