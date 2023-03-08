@@ -28,11 +28,9 @@ const btn = document.querySelector(".download-cv");
 const toastLive = document.getElementById("liveToast");
 const errorMessage = document.getElementById("error-message");
 
-const NODE_ENV = process.env.NODE_ENV;
-
 btn.addEventListener("click", () => {
   axios({
-    url: NODE_ENV + '/download',
+    url: 'http://olgabovkunwebsite-dev.us-west-2.elasticbeanstalk.com/download',
     method: 'GET',
     responseType: 'blob',
   }).then((response) => {
