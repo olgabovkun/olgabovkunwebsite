@@ -41,6 +41,7 @@ btn.addEventListener("click", () => {
     document.body.appendChild(link);
     link.click();
   }).catch(error => {
+    console.log(error);
     const toast = new bootstrap.Toast(toastLive);
     errorMessage.textContent = 'Something Went Wrong. Contact me to get CV.';
     toast.show();
