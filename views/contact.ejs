@@ -1,0 +1,60 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="container mt-5 px-0">
+        <h1 class="display-3 index-header text-start">Contact</h1>
+        <div class="index-info mb-2">
+            Thank you for taking the time to reach out to me! 
+        </div>
+        <div class="index-info mb-2">
+            If you have any questions, comments, or would like to discuss a potential project, please feel free to reach out. 
+            You can use the contact form below to send me a message, or you can connect with me on LinkedIn.
+        </div>
+
+        <div class="index-info mb-4">
+            I'll get back to you as soon as possible with a response.
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="messageForm" method="POST" class="row needs-validation" novalidate>
+                    <div class="mb-3 col-6 ps-0">
+                        <label for="name" class="form-label text-muted">Name</label>
+                        <input type="name" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3 col-6 pe-0">
+                        <label for="email" class="form-label  text-muted">Email</label>
+                        <input type="email" class="form-control" id="email"  name="email" required>
+                    </div>
+
+                    <div class="mb-3 col-12 px-0">
+                        <label for="message" class="form-label text-muted">Message</label>
+                        <textarea class="form-control" rows="5" type="text" id="message" name="message"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-5 ms-md-5 px-0">
+                <div class="index-info">
+                    If you'd like to connect with me on LinkedIn, you can find my profile here: 
+                    <a href="https://www.linkedin.com/in/olyabovkun/" target=”_blank”><span>Linked <i class="bi bi-linkedin"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3 mb-5">
+            <div id="liveToast" class="toast text-light"  aria-live="assertive" aria-atomic="true">
+                <div class="d-flex" data-bs-theme="dark" >
+                    <div class="toast-body">
+                      <span id="toastMessage">Success</span>
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto text-light" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+            </div>
+        </div> 
+    </div>
+     
+
+    <script src="../js/contact.js"></script>

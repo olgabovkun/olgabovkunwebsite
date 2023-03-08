@@ -1,0 +1,324 @@
+.green-color {
+    color: #2d805c;
+}
+
+.orange-color {
+    color: #e26b10;
+}
+
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #2d805c;
+}
+
+.main-brand {
+    display: flex;
+}
+
+.brand {
+    width: 3px;
+    height: 19px;
+    background: #2d805c;
+    margin-right: 5.4px;
+    border-radius: 20em;
+}
+
+.brand-text {
+    color: #2d805c;
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.brand:nth-child(2n+1) {
+    height: 23px;
+}
+
+.brand:nth-child(3n+1) {
+    height: 26px;
+}
+
+.navlink:hover {
+    color: #e26b10;
+    box-shadow: inset 0 -2px 0 0 #e26b10;
+}
+
+.navlink:active {
+    color: #e26b10;
+    box-shadow: inset 0 -2px 0 0 #e26b10;
+}
+
+
+.collapse-button {
+    width: 50px;
+    border: none;
+}
+
+.collapse-button div {
+    background: #2d805c;
+    height: 4px;
+    border-radius: 25px;
+    margin: 5px 0;
+}
+
+.collapse-button:hover {
+    cursor: pointer;
+}
+
+nav {
+    border-bottom: 1px solid #2d805c78;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    color: #f2f2f2;
+    font-weight: 200;
+    background-color: #2d805c;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 30%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 30%;
+    }
+}
+
+/* index page */
+.index-header {
+    color: #e26b10;
+    font-weight: 500;
+}
+
+.index-subheader {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.index-header-description {
+    color: #e26b10;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: -5px;
+}
+
+main.main-index {
+    max-width: 70vw;
+}
+
+.index-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.index-header-info {
+    color: #2d805c;
+    font-size: 1.6em;
+
+}
+
+div.wrapper-info {
+    border-left: 5px solid #2d805c;
+}
+
+.wrapper-unorder-list {
+    column-count: 2;
+}
+
+ul.unorder-list {
+    list-style: none;
+}
+
+ul.unorder-list li::before {
+    content: "\25AA";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ul.unorder-list li.professional-experience::before {
+    color: #2d805c
+}
+
+ul.unorder-list li.non-professional-experience::before {
+    color: #e26b10
+}
+
+.expand-icon-roll {
+    animation: roll 0.8s forwards;
+}
+
+.expand-icon-rollup {
+    animation: rollup 0.8s forwards;
+}
+
+@keyframes hide {
+    from {
+        display: block;
+    }
+
+    to {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes hideHeight {
+    0% {
+        max-height: 500px;
+    }
+
+    100% {
+        max-height: 0px;
+    }
+}
+
+@keyframes show {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes showHeight {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 500px;
+    }
+}
+
+.wrapper-project-info {
+    max-height: 500px;
+    min-height: 0;
+}
+
+.hide-div {
+    animation: hide 0.8s forwards, hideHeight 1s forwards;
+}
+
+.show-div {
+    animation: show 0.8s forwards, showHeight 1s forwards;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rollup {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@media(max-width: 1200px) {
+    h1.index-header {
+        font-size: 3.5rem;
+    }
+
+    div.index-subheader {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 995px) {
+    h1.index-header {
+        font-size: 2.5rem;
+    }
+
+    div.index-subheader {
+        font-size: 1.3rem;
+    }
+
+    .index-header-description {
+        font-size: 1em;
+    }
+}
+
+.index-main {
+    margin-top: 50px;
+}
+
+div.index-subheader {
+    margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+    /* use if there is image on index page */
+    /* .index-main {
+        margin-top: 50px;
+    } */
+
+    /* div.index-subheader {
+        margin-bottom: 20px;
+    } */
+}
+
+
+/* experience page */
+.company-name {
+    font-size: 1.5em;
+}
+
+.download-cv {
+    background-color: #e26b10;
+    color: #f2f2f2
+}
+
+.download-cv:hover {
+    background-color: #cf5e08;
+    color: #f2f2f2;
+}
+
+.download-cv:active {
+    border: 1px solid #cf5e08 !important;
+}
+
+/* contact page */
+.submit-btn {
+    background-color: #2d805c;
+    color: #f2f2f2
+}
+
+.submit-btn:hover {
+    background-color: #277050;
+    color: #f2f2f2;
+}
+
+.submit-btn:active {
+    border: 1px solid #277050 !important;
+}

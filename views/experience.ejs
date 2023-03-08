@@ -1,0 +1,101 @@
+<% layout('layouts/boilerplate') %>
+    <div class="container-md mt-5">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-8 px-0">
+                    <h1 class="display-3 index-header text-start">Experience</h1>
+                </div>
+                <div class="col-4 px-0 text-end orange-color">
+                    <button class="btn download-cv">Download CV</button>
+                </div>
+                
+            </div>
+            <div class="row justify-content-evenly align-items-center">
+                <div class="col-6 px-0 company-name fw-semibold">True Engineering</div>
+                <small class="col-6 px-0 text-end orange-color">Aug 2018 - June 2022</small>
+            </div>
+            <div class="row">
+                <div class="col px-0 position text-muted">Senior Software Engineer</div>
+            </div>
+        </div>
+
+        <div class="index-info mb-2">
+            I started my career at a company based in Novosibirsk, Russia, where I worked for four years.
+            I've made significant progress in my career here, transitioning from a Junior to a Senior position.
+            During my time there, I had the opportunity to work on a variety of projects, from small applications to
+            large-scale
+            enterprise systems.
+            I've gained considerable experience in these projects in both backend and frontend technologies. My primary
+            focus
+            was on backend development.
+        </div>
+        <div class="index-experience-learn-more text-muted">
+            <div id="expand-icon" class="d-inline-block"><i class="bi bi-chevron-double-right"></i></div>
+            <div class="d-inline-block"> Expand to learn more about projects</div>
+        </div>
+        <div class="wrapper-project-info ms-4 d-none">
+            <%-include('partials/work-projects')%>
+        </div>
+
+        <div class="wrapper-info mb-5 px-3 mt-3">
+            <div class="index-header-info">
+                Responsibilities
+            </div>
+            <div class="index-info">
+                <ul class="unorder-list">
+                    <li class="professional-experience">Leading the development of web-applications;</li>
+                    <li class="professional-experience">Prioritizing and assigning tasks among teammates;</li>
+                    <li class="professional-experience">Creating new features and fixing bugs with test coverage;</li>
+                    <li class="professional-experience">Assisting and reolving client issues;</li>
+                    <li class="professional-experience">Maintaining and impoving the current code base;</li>
+                    <li class="professional-experience">Participating in code reviews;</li>
+                    <li class="professional-experience">Evaluate and decompose tasks;</li>
+                    <li class="professional-experience">Maintaining close communication with teammates and clients;</li>
+                    <li class="professional-experience">Mentoring Junior developers.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper-info mb-5 px-3">
+            <div class="index-header-info">
+                Key tasks
+            </div>
+            <div class="index-info">
+                <ul class="unorder-list">
+                    <li class="professional-experience">For three years, developed and maintained a high-load enterprise
+                        web application for one of the largest private airline with over 80 000 transactions per day;
+                    </li>
+                    <li class="professional-experience">Obtaining data from various sources using tachnologies like
+                        Kafka, SOAP, SMTP, SMB, and FTP;</li>
+                    <li class="professional-experience">Increased report generation speed by 34% and 60% (using
+                        elasticsearch aggregation and a new approach with creating a separate microservice to build
+                        report during the data process);</li>
+                    <li class="professional-experience">Participated in the architectural decision-making process,
+                        created and updated infrastructure documentation, and interaction schemes;</li>
+                    <li class="professional-experience">Participated in the entire software development life cycle,
+                        starting from getting requirements and creating user stories, and up to leading release test
+                        processes;</li>
+                    <li class="professional-experience">Developed a front-end Angular application from scratch for
+                        role-based access control management;</li>
+                    <li class="professional-experience">Developed a Spring Boot application from scratch for property
+                        insurance calculation;</li>
+                    <li class="professional-experience">Mentored Junior Java developers, leading to their achieving
+                        middle-level proficiency within a year.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast text-bg-danger text-light" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex" data-bs-theme="dark" >
+                    <div class="toast-body">
+                      <span id="error-message"></span>
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto text-light" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+            </div>
+          </div>    
+    </div>
+
+    
+    <script src="../js/experience.js"></script>
