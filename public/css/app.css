@@ -81,6 +81,10 @@ footer {
     background-color: #2d805c;
 }
 
+footer a {
+    color: #f2f2f2;
+}
+
 a {
     text-decoration: none;
 }

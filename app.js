@@ -6,8 +6,6 @@ const express = require('express'),
     ExpressError = require('./utils/ExpressError');
 require('dotenv').config();
 
-console.log(process.env);
-
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
