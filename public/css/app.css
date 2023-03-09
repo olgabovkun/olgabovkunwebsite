@@ -146,17 +146,14 @@ div.wrapper-info {
 }
 
 ul.unorder-list {
-    list-style: none;
+    list-style-type: square;
+    color: #2d805c;
+    /* list-style: none; */
 }
 
-ul.unorder-list li::before {
-    content: "\25AA";
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    color: #2d805c;
-    padding-right: 1em;
+
+ul.unorder-list li span {
+    color: black !important;
 }
 
 /* ul.unorder-list li.professional-experience::before {
