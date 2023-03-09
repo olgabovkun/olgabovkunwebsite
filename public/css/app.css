@@ -281,12 +281,12 @@ ul.unorder-list li.non-professional-experience::before {
         font-size: 1.2rem;
     }
 
-    .index-header-description {
-        font-size: 0.8em;
-    }
-    body {
-        font-size: 0.8em;
-    }
+    /* .index-header-description {
+        font-size: 1em;
+    } */
+     .index-info { 
+         font-size: 1.1em; 
+     } 
 
     ul {
         padding-left: 1em;
