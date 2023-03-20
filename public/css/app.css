@@ -155,7 +155,6 @@ div.wrapper-info {
 ul.unorder-list {
     list-style-type: square;
     color: #2d805c;
-    /* list-style: none; */
 }
 
 
@@ -163,13 +162,9 @@ ul.unorder-list li span {
     color: black !important;
 }
 
-/* ul.unorder-list li.professional-experience::before {
-    color: #2d805c
+.expand-icon {
+    cursor: pointer;
 }
-
-ul.unorder-list li.non-professional-experience::before {
-    color: #e26b10
-} */
 
 .expand-icon-roll {
     animation: roll 0.8s forwards;
@@ -288,9 +283,6 @@ ul.unorder-list li.non-professional-experience::before {
         font-size: 1.2rem;
     }
 
-    /* .index-header-description {
-        font-size: 1em;
-    } */
      .index-info { 
          font-size: 1.1em; 
      } 
