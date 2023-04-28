@@ -14,7 +14,8 @@ You can use it as a template to create your own environment.
 ```
 npm install
 ```
-3. Create .env file that contains:
+3. Create file with CV: public/files/your_CV_name.pdf
+4. Create .env file that contains:
 ```
 EMAIL_FROM=[add_here_email_from]
 EMAIL_TO=[add_here_email_to]
@@ -25,7 +26,7 @@ CV_FILE_NAME=[add_here_cv_filename]
 PORT=3000
 ```
 
-4. start app
+5. start app
 ```
 node app.js
 ```
