@@ -29,3 +29,5 @@ PORT=3000
 ```
 node app.js
 ```
+
+5. open http://localhost:3000/

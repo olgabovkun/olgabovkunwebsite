@@ -22,11 +22,8 @@ module.exports.sendMail = async function (req, res, next) {
     mailOptions.text = `From: ${name}. Email: ${email}. Text: ${message}`;
     
     try {
-        const response = await transporter.sendMail(mailOptions).catch();
-        console.log('Message sent: %s', response);
-              
+        await transporter.sendMail(mailOptions).catch();  
       } catch (error) {
-        console.log('error =' + error);
         next(new ExpressError('Something went wrong', 500));
       }
 };

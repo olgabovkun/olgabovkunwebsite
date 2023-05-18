@@ -35,8 +35,6 @@ router.get('/download', function (req, res, next) {
 });
 
 router.post('/sendMessage', async function (req, res, next) {
-    console.log('Received message: ');
-    console.log(req.body);
     try {
         await sendMail(req);
         res.send({ result: "success" });
