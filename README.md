@@ -14,7 +14,7 @@ You can use it as a template to create your own environment.
 ```
 npm install
 ```
-3. Create file with CV: public/files/your_CV_name.pdf
+3. Add your CV: public/files/your_CV_name.pdf
 4. Create .env file that contains:
 ```
 EMAIL_FROM=[add_here_email_from]
