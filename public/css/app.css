@@ -147,12 +147,12 @@ main.main-index {
 }
 
 .index-info {
-    margin-top: 20px;
     font-weight: 300;
     color: #221712;
     font-family: Roboto;
     font-style: normal;
     line-height: 30px;
+    font-size: 1em;
 }
 
 .index-header-info {
@@ -160,13 +160,15 @@ main.main-index {
     font-size: 1.6em;
     font-family: "RocknRoll One";
 }
+
 div.wrapper-borderleft {
     background-color: #F1EFEF;
     width: 2px;
     border-radius: 100px;
     padding: 0;
 }
-.info-row:hover > .wrapper-borderleft {
+
+.info-row:hover>.wrapper-borderleft {
     background-color: #771011;
     transition: background-color 0.7s ease;
 }
@@ -177,6 +179,7 @@ div.wrapper-borderleft {
 
 ul.unorder-list {
     list-style-type: none;
+    padding-left: 0rem;
     /* list-style-type: square; */
     /* color: #2d805c; */
 }
@@ -298,22 +301,35 @@ ul.unorder-list li span {
     }
 
     div.index-subheader {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-style: normal;
         font-weight: 300;
-        line-height: 20px;
+        line-height: 25px;
+    }
+
+    div.index-info {
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px;
     }
 
     .index-header-description {
         font-size: 1em;
     }
-    
+
     .navbar-link {
-        text-transform: uppercase;
         font-size: 1em;
         font-weight: 300;
-        color: red;
-        font-family: 'Roboto', sans-serif;
+        text-align: end;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .wrapper-unorder-list {
+        column-count: 3;
     }
 }
 
@@ -330,37 +346,28 @@ ul.unorder-list li span {
         font-size: 0.6rem;
         font-style: normal;
         font-weight: 300;
-        line-height: 15px;
+        line-height: 20px;
     }
 
-    .index-info {
-        font-size: 1.1em;
-    }
-
-    ul {
-        padding-left: 1em;
+    div.index-info {
+        font-size: 0.6rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
     }
 
     .btn {
         font-size: 1em;
     }
 
+    .brand-image {
+        height: 40px;
+    }
+
 }
 
-.index-main {
-    margin-top: 50px;
-}
-
-
-@media(min-width: 768px) {
+@media(max-width: 768px) {
     /* use if there is image on index page */
-    /* .index-main {
-        margin-top: 50px;
-    } */
-
-    /* div.index-subheader {
-        margin-bottom: 20px;
-    } */
 }
 
 
@@ -417,5 +424,5 @@ ul.unorder-list li span {
 
 .ml-6,
 .mx-6 {
-  margin-left: 4rem !important;
+    margin-left: 4rem !important;
 }
