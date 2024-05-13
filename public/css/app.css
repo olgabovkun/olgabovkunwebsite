@@ -78,8 +78,6 @@ body {
 }
 
 .footer {
-    color: #221712;
-    font-weight: 200;
     background-color: #F9F9F9;
     border-radius: 50px;
 }
@@ -93,7 +91,8 @@ body {
     cursor: pointer;
 }
 
-.footer-copyright {
+.footer-text {
+    color: #221712;
     font-weight: 200;
 }
 
@@ -314,6 +313,10 @@ ul.unorder-list li span {
         line-height: 25px;
     }
 
+    .footer-text {
+        font-size: 0.9rem;
+    }
+
     .index-header-description {
         font-size: 1em;
     }
@@ -354,6 +357,10 @@ ul.unorder-list li span {
         font-style: normal;
         font-weight: 300;
         line-height: 20px;
+    }
+
+    .footer-text {
+        font-size: 0.6rem;
     }
 
     .btn {
