@@ -156,7 +156,7 @@ main.main-index {
 
 .index-header-info {
     color: #771011;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-family: "RocknRoll One";
 }
 
@@ -176,13 +176,18 @@ div.wrapper-borderleft {
     column-count: 4;
 }
 
+ul.unorder-list-style-disc {
+    list-style-type: disc;
+}
+
+ul.unorder-list-style-disc li::marker {
+    color: #771011;
+}
+
 ul.unorder-list {
     list-style-type: none;
     padding-left: 0rem;
-    /* list-style-type: square; */
-    /* color: #2d805c; */
 }
-
 
 ul.unorder-list li span {
     color: black !important;
@@ -314,6 +319,10 @@ ul.unorder-list li span {
     }
 
     .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .form-label {
         font-size: 0.9rem;
     }
 
