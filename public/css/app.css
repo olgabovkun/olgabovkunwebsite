@@ -171,6 +171,9 @@ div.wrapper-borderleft {
     background-color: #771011;
     transition: background-color 0.7s ease;
 }
+.info-row:hover>.experience-borderleft-hover {
+    background-color: #d8d8d8;
+}
 
 .wrapper-unorder-list {
     column-count: 4;
@@ -191,6 +194,16 @@ ul.unorder-list {
 
 ul.unorder-list li span {
     color: black !important;
+}
+
+ul.unorder-list-experience  {
+    list-style-type: disc;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+ul.unorder-list-experience li::marker {
+    color: #cdcdcd;
 }
 
 .expand-icon {

@@ -1,27 +1,27 @@
-const expandAboutProjects = document.querySelector('.index-experience-learn-more');
+// const expandAboutProjects = document.querySelector('.index-experience-learn-more');
 const wrapperPojectInfo = document.querySelector('.wrapper-project-info');
 const expandIcon = document.querySelector('#expand-icon');
 
-expandAboutProjects.addEventListener('click', (event) => {
-  if ((wrapperPojectInfo.classList.contains("hide-div")) ||
-    (!wrapperPojectInfo.classList.contains("show-div") && !wrapperPojectInfo.classList.contains("hide-div"))) {
-    wrapperPojectInfo.classList.add("show-div");
-    wrapperPojectInfo.classList.remove("hide-div", "d-none");
-  } else {
-    wrapperPojectInfo.classList.add("hide-div");
+// expandAboutProjects.addEventListener('click', (event) => {
+//   if ((wrapperPojectInfo.classList.contains("hide-div")) ||
+//     (!wrapperPojectInfo.classList.contains("show-div") && !wrapperPojectInfo.classList.contains("hide-div"))) {
+//     wrapperPojectInfo.classList.add("show-div");
+//     wrapperPojectInfo.classList.remove("hide-div", "d-none");
+//   } else {
+//     wrapperPojectInfo.classList.add("hide-div");
     
-    wrapperPojectInfo.classList.remove("show-div");
-  }
+//     wrapperPojectInfo.classList.remove("show-div");
+//   }
 
-  if ((expandIcon.classList.contains("expand-icon-rollup")) ||
-    (!expandIcon.classList.contains("expand-icon-rollup") && !expandIcon.classList.contains("expand-icon-roll"))) {
-    expandIcon.classList.add("expand-icon-roll");
-    expandIcon.classList.remove("expand-icon-rollup");
-  } else {
-    expandIcon.classList.add("expand-icon-rollup");
-    expandIcon.classList.remove("expand-icon-roll");
-  }
-});
+//   if ((expandIcon.classList.contains("expand-icon-rollup")) ||
+//     (!expandIcon.classList.contains("expand-icon-rollup") && !expandIcon.classList.contains("expand-icon-roll"))) {
+//     expandIcon.classList.add("expand-icon-roll");
+//     expandIcon.classList.remove("expand-icon-rollup");
+//   } else {
+//     expandIcon.classList.add("expand-icon-rollup");
+//     expandIcon.classList.remove("expand-icon-roll");
+//   }
+// });
 
 
 const btn = document.querySelector(".download-cv");
